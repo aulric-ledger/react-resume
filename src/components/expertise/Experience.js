@@ -34,6 +34,23 @@ const Experience = () => {
         </ul>
         </p>
       </div>
+      <div className='exp3'>
+        <h4>QA Engineer - TVTY</h4>
+        <h5>2016 - 2018</h5>
+        <p>
+        Working with several data sources provider (AdWord, DBM, Social Network, Tv programs, weather forecast).
+        Involvement in establishment of a continuous integration and Quality process which make me familiar with Docker, Makefile, Codeception, Git and Jenkins. Review requirements specifications and technical design documents to provide timely and meaningful feedback.
+        Write test plans derived from specification (functional and technical).
+        Estimate, prioritize, plan, and coordinate testing activities.
+        Manage tasks and testing scope for multiple testing projects.
+        Make recommendations to improve product reliability, performance, and quality assurance best practices and processes.
+        Research evolving test trends.
+        Work closely with project management and dev teams.
+        Design, develop and execute automation scripts (Codeception). Design test data, test files to feed automated tests.
+        Identify, record, document thoroughly and track defects. Perform continue regression testing.
+        Ensure the quality of the deliverables sent to customers. Manage TMA.
+        </p>
+      </div>
     </div>
   );
 };

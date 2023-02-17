@@ -29,7 +29,7 @@
 
       img {
         border-radius: 50%;
-        box-shadow: 0 0 0 5px $color-2;
+        box-shadow: 0 0 0 5px $color-4;
       }
 
       h3 {
@@ -79,12 +79,8 @@
     }
   }
 
-
   .socialNetwork {
-    z-index: 1;
     grid-area: 3;
-    margin-top: .5rem;
-
     ul {
       display: flex;
       width:auto;
