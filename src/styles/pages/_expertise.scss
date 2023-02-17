@@ -1,17 +1,17 @@
-.skills {
-  .skillsContent {
+.expertise {
+  .expertiseContent {
     min-height: $min-height;
     width: 100%;
     overflow: hidden;
     position: relative;
     display: grid;
     grid-template-columns: 25% 1fr 1fr;
-    grid-template-rows: 75% 25% 1fr;
+    grid-template-rows: 80% 20% 1fr;
     grid-template-areas: 
       "S E E"
       "O O H";
     
-    .technoTools, .experience, .other, .hobbies {
+    .technicals, .experience, .other, .hobbies {
       background: $color-1;
       color: $color-3;
       border-radius: $border-radius;
@@ -26,16 +26,16 @@
       text-transform: uppercase;
     }
 
-    .technoTools {
+    .technicals {
       grid-area: S;
       display: grid;
       margin: 0 .1rem .1rem 0;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: 
         "1"
         "2";
-      .technologiesDisplay {
+      .skillsDisplay {
         grid-area: 1;
       }
 
@@ -48,7 +48,7 @@
         margin-bottom: .3rem;
       }
 
-      .technologiesList {
+      .toolsList {
         padding-top: .5rem;
 
         li {
@@ -84,16 +84,15 @@
       margin: 0 0 .1rem 0;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 10% 1fr 1fr;
+      grid-template-rows: .1fr 30% 30% 30%;
       grid-template-areas: 
         "1"
         "2"
-        "3";
+        "3"
+        "4";
       
       h3 {
         grid-area: 1;
-        margin-bottom: 0;
-        padding-bottom: 0;
       }
       h4 {
         font-size: 1.1rem;
@@ -101,27 +100,40 @@
       }
       h5 {
         font-size: .95rem;
-        padding-bottom: .2rem;
+        padding-bottom: .21rem;
       }
       p {
         text-align: justify;
       }
       .exp-1 {
         grid-area: 2;
-        
       }
       .exp-2 {
         grid-area: 3;
       }
+      .exp3 {
+        grid-area: 4;
+      }
     }
     .other {
       grid-area: O;
-
-      .list {
-        display: flex;
+      padding-bottom: 1.5rem;
+      .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+          "1" "2";
         height: 100%;
         margin: 0 auto;
         justify-content: space-between;
+
+        .list1 {
+          grid-area: 1;
+        }
+        .list12 {
+          grid-area: 2;
+        }
   
         ul {
           height: 80%;
@@ -136,6 +148,7 @@
     .hobbies {
       grid-area: H;
       margin-left: .1rem;
+      padding-bottom: 1.5rem;
   
       ul {
         height: 80%;

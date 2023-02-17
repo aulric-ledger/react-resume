@@ -15,15 +15,15 @@ const Navigation = () => {
         <ul>
           <li>
             <NavLink exact to='/' activeClassName='navActive'>
-              <i className='fas fa-user-secret'>
+              <i className='fas fa-home'>
                 <span>Home</span>
               </i>
             </NavLink>
           </li>
           <li>
-            <NavLink exact to='/skills' activeClassName='navActive'>
-              <i className='fas fa-flask'>
-                <span>Skills</span>
+            <NavLink exact to='/expertise' activeClassName='navActive'>
+              <i className='fas fa-user-secret'>
+                <span>About me</span>
               </i>
             </NavLink>
           </li>

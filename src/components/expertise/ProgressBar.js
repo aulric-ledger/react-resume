@@ -12,7 +12,7 @@ const ProgressBar = (props) => {
             let progressBar = item.xp / xpLevel * 100 + '%';
 
             return (
-              <div id={item.id} className='technologiesList'>
+              <div id={item.id} className='toolsList'>
                   <li>{item.value}</li>
                   <div className='progressBar' style={{width:progressBar}}></div>
               </div>
