@@ -1,0 +1,24 @@
+.notFound {
+    @include verticalCenter;
+    height: 95vh;
+    max-width: 1200px;
+    background: url('../../media/errorScreen.jpg') no-repeat center/cover;
+    border-radius: $border-radius;
+    text-align: center;
+  
+    h3 {
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      color: $color-1;
+    }
+    a {
+      padding: 1rem 2rem;
+      border-radius: $border-radius;
+      background: $color-3;
+  
+      &:hover {
+        transform: scale(102%);
+        transition: .2s ease;
+      }
+    }
+}
