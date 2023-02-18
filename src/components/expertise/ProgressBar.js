@@ -4,14 +4,14 @@ const ProgressBar = (props) => {
   return (
     <div className={props.classname}>
       <h3>{props.title}</h3>
-      <div>
+      <div className={`${props.title}List`}>
         {
           props.technical.map((item) => {
             let xpLevel = 5;
             let progressBar = item.xp / xpLevel * 100 + '%';
 
             return (
-              <div id={item.id} className='toolsList'>
+              <div id={item.id} className='technicalItem'>
                   <li>{item.value}</li>
                   <div className='progressBar' style={{width:progressBar}}></div>
               </div>

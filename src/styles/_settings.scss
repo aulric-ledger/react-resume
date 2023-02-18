@@ -63,7 +63,10 @@ a:visited {
 .homeContent, .expertiseContent, .portfolioContent, .contactContent {
   margin-left: .4rem;
 
-  @media screen and (max-width: 850px){
-    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 850px){
+  body {
+    margin: 0 !important;
   }
 }
