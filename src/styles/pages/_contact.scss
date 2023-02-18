@@ -1,0 +1,85 @@
+.contact {
+  .contactContent {
+    @include verticalCenter;
+    min-height: $min-height;
+    max-width: 1200px;
+    position: relative;
+    background: linear-gradient(290deg, $color-1 30%, transparent 100%);
+    border-radius: $border-radius;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .5fr .5fr 1fr;
+    grid-template-areas: 
+      "1"
+      "2"
+      "3"
+      "4";
+    justify-content: space-around;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: inherit;
+      background: url('../../media/map.jpg') no-repeat center/cover;
+      z-index: -1;
+      filter: brightness(30%);
+    }
+
+    .emailContent {
+      grid-area: 2;
+      font-size: 1.2rem;
+
+      a {
+        color: $color-3;
+        i {
+        padding-right: .3rem;
+        }
+      }
+      button {
+        padding-left: 1.2rem;
+        &:hover {
+          transform: scale(120%);
+          transition: 0.3s ease;
+          }
+      }
+    }
+    .phoneContent {
+      grid-area: 3;
+      font-size: 1.2rem;
+
+      #phoneTo {
+        font-size: 1rem;
+        i {
+          padding-right: .3rem;
+        }
+      }
+
+      #copy-phone i {
+        padding-left: .5rem;
+        &:hover {
+          transform: scale(120%);
+          transition: 0.3s ease;
+          }
+      }
+    }
+
+    h3 {
+      color: $color-4;
+      font-size: 2rem;
+      cursor: default;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      font: inherit;
+      color: $color-3;
+      background: none;
+      padding: .3rem;
+    }
+  }
+}
