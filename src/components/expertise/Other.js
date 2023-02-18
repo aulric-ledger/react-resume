@@ -9,16 +9,18 @@ const Other = () => {
           <ul>
             <li><i className='fas fa-language'></i> English: fluent</li>
             <li><i className='fas fa-language'></i> French: native</li>
+            <li><i className='fas fa-check'></i> Agile methodologies</li>
             <li><i className='fas fa-terminal'></i> Terminal</li>
             <li><i className='fab fa-github'></i> Github</li>
           </ul>
         </div>
         <div className='list2'>
           <ul>
-            <li><i className='fas fa-check'></i> Agile methodologies</li>
+            <li><i className='fab fa-bluetooth-b'></i> iOT</li>
             <li><i className='fab fa-linux'></i> UNIX env</li>
             <li><i className='fas fa-atom'></i> Electron</li>
             <li><i className='fab fa-docker'></i> Docker</li>
+            <li><i className='fas fa-database'></i> SQL</li>
           </ul>
         </div>
       </div>
