@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { faHome, faUserSecret, faBarsProgress, faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navigation = () => {
 
@@ -15,36 +17,32 @@ const Navigation = () => {
         <ul>
           <li>
             <NavLink exact to='/' activeClassName='navActive'>
-              <i className='fas fa-home'>
+              <FontAwesomeIcon icon={faHome} />
                 <span>Home</span>
-              </i>
             </NavLink>
           </li>
           <li>
             <NavLink exact to='/expertise' activeClassName='navActive'>
-              <i className='fas fa-user-secret'>
+              <FontAwesomeIcon icon={faUserSecret} />
                 <span>About me</span>
-              </i>
             </NavLink>
           </li>
           <li>
             <NavLink exact to='/portfolio' activeClassName='navActive'>
-              <i className='fas fa-tasks'>
+              <FontAwesomeIcon icon={faBarsProgress} />
                 <span>Portfolio</span>
-              </i>
             </NavLink>
           </li>
           <li>
             <NavLink exact to='/contact' activeClassName='navActive'>
-              <i className='fas fa-address-card'>
+              <FontAwesomeIcon icon={faAddressCard} />
                 <span>Contact</span>
-              </i>
             </NavLink>
           </li>
         </ul>
       </div>
       
-      <div className='socialNetwork'>
+      <div className='links'>
         <ul>
           <li>
             <a href='https://www.linkedin.com/in/arnaud-ulric-6a811478' target='_blank' rel="noopener noreferrer">
@@ -57,8 +55,8 @@ const Navigation = () => {
             </a>
           </li>
           <li>
-            <a href='https://mail.google.com/' target='_blank' rel="noopener noreferrer">
-              <i className='fas fa-paper-plane'></i>
+            <a href='https://twitter.com/Tommy97234' target='_blank' rel="noopener noreferrer">
+              <i className='fab fa-twitter'></i>
             </a>
           </li>
         </ul>
