@@ -133,7 +133,10 @@
                   transform: scale(115%);
                   transition: 0.2s ease;
                   display: block;
-                  }
+                }
+                &:nth-child(4) {
+                    padding-right: .4rem;
+                }
               }
           }
       }
@@ -142,6 +145,7 @@
 
 @media screen and (max-width: 630px) {
   .sidebar {
+
     ul {
       justify-content: space-around !important;
 
