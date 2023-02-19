@@ -29,6 +29,7 @@ $min-height: 99vh;
 
 body {
   margin: 1rem auto;
+  min-width: 350px;
   max-width: 1400px;
   font-family: $font-1;
   color: $black;

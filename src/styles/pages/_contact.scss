@@ -2,7 +2,6 @@
   .contactContent {
     @include verticalCenter;
     min-height: $min-height;
-    max-width: 1200px;
     position: relative;
     background: linear-gradient(290deg, $color-1 30%, transparent 100%);
     border-radius: $border-radius;
