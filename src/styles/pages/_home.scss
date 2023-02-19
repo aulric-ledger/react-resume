@@ -37,20 +37,72 @@
         text-shadow: 1px 3px 1px $black;
         cursor:default;
       }
-      .pdf {
-        a {
-          font-size: 1.2rem;
-          background: $color-3;
-          padding: 1rem 2rem;
-          border-radius: $border-radius;
-          transition: 0.2s ease;
+      .actions {
+        display: grid;
+        padding: 0 2rem 0 0;
+        margin: 0 2rem 0 0;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "D L";
+
+        .pdf {
+          grid-area: D;
+          transition: .3s;
+          a {
+            font-size: 1.2rem;
+            background: $color-3;
+            padding: 1rem 1rem;
+            border-radius: $border-radius;
+            transition: .3s ease;
+          }
+          &:hover {
+            transform: scale(105%);
+            transition: 0.3s ease;
+          }
+          
         }
-        &:hover {
-          transform: scale(102%);
-          transition: 0.2s ease;
-      }
+
+        .links {
+          grid-area: L;
+          display: none;
+          ul {
+            display: flex;
+            width:auto;
+            justify-content:space-around;
+      
+            li {
+              font-size: 1.3rem;
+              background: $color-3;
+              color: $color-1;
+              border-radius: 50%;
+              transition: .3s;
+              cursor: pointer;
+              &:hover {
+                transform: scale(110%);
+                transition: 0.3s ease;
+              }
+              a {
+                font-size: 1.5rem;
+                background: $color-3;
+                padding: .75rem 1rem;
+                border-radius: $border-radius;
+                transition: .3s ease;
+              }
+           }
+          }
+        }
       }
     }
+  }  
+}
+
+@media screen and (max-width:850px){
+  .links {
+    display: block !important;
+    li {
+      margin: 0 1rem;
+  }
   }
 }
 
@@ -64,6 +116,25 @@
     }
     h2 {
       font-size: 1.8rem !important;
+    }
+  }
+}
+
+@media screen and (max-width:500px){
+  .links {
+    display: block !important;
+    li {
+      margin: 0 .5rem !important;
+    }
+  }
+  .pdf {
+    font-size: 1.35rem;
+    margin-right: 0.5rem !important;
+    a{
+      padding: 1rem 1.15rem !important;
+    }
+    span {
+    display: none;
     }
   }
 }

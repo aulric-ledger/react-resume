@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { faHome, faUserSecret, faBarsProgress, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Links from '../components/Links';
 
 const Navigation = () => {
 
@@ -41,29 +42,10 @@ const Navigation = () => {
           </li>
         </ul>
       </div>
-      
-      <div className='links'>
-        <ul>
-          <li>
-            <a href='https://www.linkedin.com/in/arnaud-ulric-6a811478' target='_blank' rel="noopener noreferrer">
-              <i className='fab fa-linkedin'></i>
-            </a>
-          </li>
-          <li>
-            <a href='https://github.com/aulric-ledger' target='_blank' rel="noopener noreferrer">
-              <i className='fab fa-github-alt'></i>
-            </a>
-          </li>
-          <li>
-            <a href='https://twitter.com/Tommy97234' target='_blank' rel="noopener noreferrer">
-              <i className='fab fa-twitter'></i>
-            </a>
-          </li>
-        </ul>
+      <Links />
         <div className='signature'>
           <h4>Arnaud97234 - 2023</h4>
         </div>
-      </div>
     </div>
   );
 };
