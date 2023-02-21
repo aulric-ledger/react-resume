@@ -98,11 +98,22 @@
 }
 
 @media screen and (max-width:850px){
-  .links {
-    display: block !important;
-    li {
-      margin: 0 1rem;
-  }
+  .home {
+    .homeContent {
+      .sidebar {
+        .links {
+          display: none !important;
+        }
+      }
+      .links {
+        display: block !important;
+        ul {
+          li {
+            margin: 0 1rem !important;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -128,7 +139,6 @@
     }
   }
   .pdf {
-    font-size: 1.35rem;
     margin-right: 0.5rem !important;
     a{
       padding: 1rem 1.15rem !important;

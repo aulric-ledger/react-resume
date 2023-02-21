@@ -4,7 +4,7 @@
   height: auto;
   min-height: $min-height;
   min-width: 190px;
-  width: 25%;
+  width: 29%;
   border-radius: $border-radius;
   position: relative;
   display: grid;
@@ -78,6 +78,7 @@
 
   .links {
     grid-area: 3;
+    padding-bottom: .8rem;
     ul {
       display: flex;
       width:auto;
@@ -102,6 +103,7 @@
   .signature {
     grid-area: 4;
     margin-top: 2rem;
+    padding-bottom: 1.2rem;
     text-align: center;
     letter-spacing: .1rem;
     font-size: .7rem;
@@ -123,21 +125,22 @@
 @media screen and (max-width: 850px){
   .sidebar {
       display: flex;
-      min-height: 50px;
+      min-height: 25px;
       margin-bottom: .2rem;
       width: auto;
 
-      .id, .links {
+      .id, .links, .signature {
           display: none !important;
       }
 
       .navigation {
           width: 100%;
-          padding: .1rem 1rem;
+          padding: 0;
 
           ul {
               display: flex;
-              justify-content: space-between;
+              justify-content: space-evenly;
+              padding: 0;
             
               li {
                 &:hover {
@@ -145,14 +148,8 @@
                   transition: 0.2s ease;
                   display: block;
                 }
-                &:nth-child(4) {
-                    padding-right: .4rem;
-                }
               }
           }
-      }
-      .signature {
-        display: none;
       }
   }
 }
@@ -165,6 +162,9 @@
 
       li {
         padding: 1rem 0 !important;
+        a {
+          font-size: 120% !important;
+        }
         
         &:hover {
           transform: scale(125%) !important;

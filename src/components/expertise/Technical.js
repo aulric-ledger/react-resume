@@ -28,11 +28,13 @@ class Technical extends Component {
     return (
       <div className='technicals'>
         <ProgressBar
+          key={skills.value}
           technical={skills}
           classname='skillsDisplay'
           title='skills'
         />
         <ProgressBar
+          key={tools.value}
           technical={tools}
           classname='toolsDisplay'
           title='tools'
