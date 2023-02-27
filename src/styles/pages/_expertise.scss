@@ -91,6 +91,7 @@
         "4"
         "5";
       
+
       h3 {
         grid-area: 1;
 
@@ -103,25 +104,7 @@
         font-size: .95rem;
         padding-bottom: .21rem;
       }
-      p {
-        text-align: justify;
-      }
-      .experiencesList {
-        .exp-1 {
-          grid-area: 2;
-        }
-        .exp-2 {
-          grid-area: 3;
-        }
-        .exp3 {
-          grid-area: 4;
-        }
-        .exp4 {
-          grid-area: 5;
-          padding-bottom: 0;
-        }
 
-      }
       .experiencesList > * {
         padding-bottom: 2rem;
       }

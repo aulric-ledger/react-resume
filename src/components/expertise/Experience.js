@@ -18,12 +18,14 @@ class Experience extends Component {
               <div className='experience' id={item.id}>
                 <h4>{item.title}</h4>
                 <h5>{item.duration}</h5>
-                {item.description}
+                <text>
+                  {item.description}
+                </text>
               </div>
             )
           })
         }
-        </div>
+             </div>
       </div>
     );
   }

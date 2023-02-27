@@ -14,7 +14,7 @@ export const portfolioData = [
     items: ['javascript','react', 'nodeJS'],
     itemsIcons: ['fab fa-js','fab fa-react', 'fab fa-node'],
     source: 'https://github.com/LedgerHQ/ledger-live',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
+    info: "Ledger Live desktops and mobile apps are the companions for ledger devices allowing user to Manage, Buy, Swap, Transfer and Stake their crypto assets and NFTs. It functions as a secure gateway to the crypto ecosystem. This means accessing a variety web3 apps (NFT, DeFi, Game based services directly and seamlessly from your hardware wallet a better, simpler user experience that bypasses a major security concern known as blind signing.",
     picture: '../../media/ledgerLive_logo.png'
   },
   {
@@ -22,8 +22,8 @@ export const portfolioData = [
     name: '[ L ] Market',
     items: ['javascript','react','ethereum'],
     itemsIcons: ['fab fa-js','fab fa-react', 'fab fa-ethereum'],
-    source: 'https://github.com/LedgerHQ/nft-land/tree/master/apps/legacy-fss',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? https://market.ledger.com/',
+    source: 'https://market.ledger.com/',
+    info: "[ L ]Market is a Nft launchpad and marketplace from ledger where collectibles from Artists and Brands collaborations are available",
     picture: '../../media/lMarket_logo.png'
   },
   {
@@ -32,7 +32,7 @@ export const portfolioData = [
     items: ['php','googleAppScrips','mongoDB'],
     itemsIcons: ['fab fa-php','fab fa-google','fas fa-database'],
     source: 'https://tvty.tv/north-america/core-technology/',
-    info: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium, veritatis debitis odio eveniet quos incidunt eaque nemo eius perferendis consequatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus laboriosam aut nihil? Possimus, id facilis dignissimos repudiandae modi dolorum ea accusantium.',
+    info: "TVTY provides a Moment Marketing Platform that allows Brands to optimise their advertisement distribution by triggering ads delivery. Based on a scenario made from weather forecast, social network activities, live TV events...",
     picture: '../../media/TVTY_logo.png'
   },
   {

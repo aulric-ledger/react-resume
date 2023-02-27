@@ -41,14 +41,15 @@
         display: grid;
         padding: 0 2rem 0 0;
         margin: 0 2rem 0 0;
+        justify-content: space-around;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
         grid-template-areas:
           "D L";
 
         .pdf {
           grid-area: D;
           transition: .3s;
+          display: flex;
           a {
             font-size: 1.2rem;
             background: $color-3;
@@ -57,10 +58,9 @@
             transition: .3s ease;
           }
           &:hover {
-            transform: scale(105%);
+            transform: scale(110%);
             transition: 0.3s ease;
           }
-          
         }
 
         .links {
@@ -68,14 +68,13 @@
           display: none;
           ul {
             display: flex;
-            width:auto;
             justify-content:space-around;
       
             li {
               font-size: 1.3rem;
               background: $color-3;
               color: $color-1;
-              border-radius: 50%;
+              border-radius: $border-radius;
               transition: .3s;
               cursor: pointer;
               &:hover {
@@ -97,19 +96,16 @@
   }  
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width: 850px){
   .home {
     .homeContent {
-      .sidebar {
-        .links {
-          display: none !important;
-        }
-      }
+      
       .links {
-        display: block !important;
+        display: flex !important;
         ul {
           li {
-            margin: 0 1rem !important;
+            margin: 0 .5rem !important;
+            display: flex !important;
           }
         }
       }
@@ -132,16 +128,12 @@
 }
 
 @media screen and (max-width:500px){
-  .links {
-    display: block !important;
-    li {
-      margin: 0 .5rem !important;
-    }
-  }
   .pdf {
     margin-right: 0.5rem !important;
     a{
       padding: 1rem 1.15rem !important;
+      height: 55px;
+      width: 55px;
     }
     span {
     display: none;
