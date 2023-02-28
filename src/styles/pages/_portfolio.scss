@@ -255,6 +255,7 @@
   }
   .portfolioContent {
     grid-template-rows: 1fr !important;
+    margin-left: 0;
 
     .project {
       grid-template-rows: 30px 40px 20px 30px !important;
