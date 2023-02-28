@@ -13,7 +13,7 @@ const Home = () => {
 
           <div className='actions'>
             <div className='pdf'>
-              <a href='./media/resume.pdf' target='_blank'>
+              <a href='./media/arnaudUlric_resume.pdf' target='_blank'>
                 <i className='fas fa-download'></i>
                 <span> PDF</span>
               </a>
