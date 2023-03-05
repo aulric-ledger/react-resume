@@ -107,6 +107,11 @@
 
       .experiencesList > * {
         padding-bottom: 2rem;
+        white-space: pre-line;
+      }
+
+      .experience:nth-child(4) {
+        padding-bottom: .8rem;
       }
     }
     .other {

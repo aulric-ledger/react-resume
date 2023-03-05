@@ -12,7 +12,8 @@ class Technical extends Component {
       {id: 6, value: 'Test strategy', xp:4.5},
       {id: 7, value: 'Desktop automation', xp:4},
       {id: 8, value: 'Mobile automation', xp:2},
-      {id: 9, value: 'API testing', xp:1}
+      {id: 9, value: 'Open source', xp:3.5},
+      {id: 10, value: 'API testing', xp:1}
     ],
     tools: [
       {id: 1, value: 'Playwright', xp:4},
